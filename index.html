@@ -16,6 +16,81 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+      <style>
+    /* Modal container improvements */
+    #productModal .modal-content {
+      background-color: #ffffff;
+      font-family: 'Segoe UI', sans-serif;
+      color: #222;
+      border-radius: 15px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+      border: none;
+    }
+
+    /* Modal header style */
+    #productModal .modal-header {
+      background-color: #f1f1f1;
+      border-bottom: 1px solid #ccc;
+      padding: 16px 24px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+
+    #productModal .modal-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #111;
+    }
+
+    #productModal .modal-body {
+      padding: 20px 24px;
+      font-size: 15.5px;
+      line-height: 1.7;
+      color: #333;
+    }
+
+    #productModal .modal-body ul {
+      margin-top: 15px;
+      padding-left: 20px;
+    }
+
+    #productModal .modal-body ul li {
+      margin-bottom: 10px;
+      list-style-type: disc;
+    }
+
+    #productModal a {
+      color: #0056b3;
+      text-decoration: underline;
+    }
+
+    #productModal a:hover {
+      color: #004299;
+    }
+
+    #productModal .btn-close {
+      filter: grayscale(1) brightness(0.6);
+      transition: filter 0.2s ease;
+    }
+
+    #productModal .btn-close:hover {
+      filter: brightness(0.2);
+    }
+
+    #productModal .modal-body::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    #productModal .modal-body::-webkit-scrollbar-thumb {
+      background-color: #ccc;
+      border-radius: 10px;
+    }
+
+    #productModal .modal-body::-webkit-scrollbar-track {
+      background-color: #f1f1f1;
+    }
+  </style>
+    
     <!-- script
     ================================================== -->
     <script src="js/modernizr.js"></script>
@@ -193,6 +268,24 @@
               <div class="swiper-slide">
                 <div class="product-card position-relative">
                   <div class="image-holder">
+                    <img src="images/product-item5.png" alt="product-item" class="img-fluid">
+                  </div>
+                  <div class="cart-concern position-absolute">
+                    <div class="cart-button d-flex">
+                      <a href="https://amzn.in/d/cwQJ4bP" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
+                    </div>
+                  </div>
+                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+                    <h3 class="card-title text-uppercase">
+                      <a href="https://amzn.in/d/cwQJ4bP">YAVEAX UPS PRO 3X 12Vdc 5A UPS</a>
+                    </h3>
+<!--                     <span class="item-price text-primary"></span> -->
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card position-relative">
+                  <div class="image-holder">
                     <img src="images/product-item4.jpg" alt="product-item" class="img-fluid">
                   </div>
                   <div class="cart-concern position-absolute">
@@ -208,7 +301,25 @@
                   </div>
                 </div>
               </div>
-              
+              <div class="container py-5">
+  <div class="swiper-slide">
+    <div class="product-card position-relative text-center">
+      <div class="image-holder" data-bs-toggle="modal" data-bs-target="#productModal" style="cursor:pointer;">
+        <img src="images/product-item3.jpg" alt="product-item" class="img-fluid" style="max-width:200px;">
+      </div>
+      <div class="cart-concern position-absolute" style="top:10px; right:10px;">
+        <div class="cart-button d-flex">
+          <a href="https://amzn.in/d/5P9W9tf" class="btn btn-medium btn-black btn-sm">Add to Cart</a>
+        </div>
+      </div>
+      <div class="card-detail d-flex justify-content-center pt-3">
+        <h5 class="card-title text-uppercase">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#productModal">10 Watts T-Bulb</a>
+        </h5>
+      </div>
+    </div>
+  </div>
+</div>
             </div>
           </div>
         </div>
@@ -305,6 +416,13 @@
             <figure class="instagram-item pe-2">
               <a href="https://amzn.in/d/h3KS20w" class="image-link position-relative">
                 <img src="images/insta-item2.jpg" alt="instagram" class="insta-image">
+                <div class="icon-overlay position-absolute d-flex justify-content-center">
+                </div>
+              </a>
+            </figure>
+              <figure class="instagram-item pe-2">
+              <a href="https://amzn.in/d/h3KS20w" class="image-link position-relative">
+                <img src="images/product-item5.png" alt="instagram" class="insta-image">
                 <div class="icon-overlay position-absolute d-flex justify-content-center">
                 </div>
               </a>
