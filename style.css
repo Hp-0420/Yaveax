@@ -23,6 +23,31 @@ CSS STRUCTURE:
 /*--------------------------------------------------------------
 /** 1. VARIABLES
 --------------------------------------------------------------*/
+/*
+Theme Name: yaveax
+Theme URI: 
+Author: 
+Author URI: 
+Description: yaveax is specially designed product packaged for yaveax by Moksha.
+Version: 
+*/
+
+/*--------------------------------------------------------------
+This is main CSS file that contains custom style rules used in this template
+--------------------------------------------------------------*/
+
+/*------------------------------------*\
+    Table of contents
+\*------------------------------------*/
+
+/*------------------------------------------------
+
+CSS STRUCTURE:
+
+    
+/*--------------------------------------------------------------
+/** 1. VARIABLES
+--------------------------------------------------------------*/
 :root {
   --accent-color:             #717171;
   --white-color:              #fff;
@@ -1018,4 +1043,64 @@ figure.instagram-item img.insta-image {
 .post-navigation:hover svg,
 .post-navigation:focus svg {
     fill: var(--primary-color);
+}
+
+.shop-section {
+  padding: 60px 20px 40px;
+  background-color: #f9f9f9;
+}
+
+.shop-section .header h2 {
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.shop-item {
+  flex: 1 1 calc(25% - 30px);
+  max-width: calc(25% - 30px);
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.shop-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.shop-item:hover {
+  transform: scale(1.03);
+}
+
+/* Responsive Rules */
+@media (max-width: 992px) {
+  .shop-item {
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .shop-item {
+    flex: 1 1 calc(50% - 15px);
+    max-width: calc(50% - 15px);
+  }
+}
+
+@media (max-width: 480px) {
+  .shop-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
 }
