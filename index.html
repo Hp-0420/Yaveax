@@ -17,6 +17,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
       <style>
+
+        .pdf {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+        }
+        .pdf,
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        h1,
+        h3 {
+            text-align: center;
+        }
+        h1 {
+            color: green;
+        }
     /* Modal container improvements */
     #productModal .modal-content {
       background-color: #ffffff;
@@ -494,6 +513,11 @@
                   </p>
                 </div>
               </div>
+               <h1>GeeksforGeeks</h1>
+    <h3>Embedding the PDF file Using embed Tag</h3>
+    <embed class="pdf" 
+           src="https://maipdf.com/file/d68d4108597ff5@pdf"
+           width="800" height="500">
             </div>
           </div>
         </div>
